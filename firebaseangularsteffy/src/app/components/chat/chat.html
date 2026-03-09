@@ -1,0 +1,152 @@
+<!--contenedor completa del chat-->
+
+<div class="chat-container">
+    <header class="chat-header">
+        <div class="user-info">
+            <img 
+            src="data:image/png;base64,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 " 
+            alt="imagen del usuario" 
+            class="user-avatar"
+            (error) = "manejoErrorimagen($event)"
+            >   
+            <div class="user-details">
+                <h2 class="user-name">{{usuario?.displayName}}</h2>
+                <p class="user-email">{{usuario?.email}}</p>
+            </div>
+        
+        </div>
+
+        <div class="header-actions">
+            <button class="logout-btn" (click)="cerrarSesion()">salir</button>
+        </div>
+    </header>
+
+    <main class="chat-messages" #messagesContainer> 
+        <!-- validacion en caso de que no hayan mensajes vamos adar una bienvenida -->
+        @if(mensajes.length === 0 && !cargandoHistorial){
+            <div class="welcome-message">
+                <div class="welcome-content">
+                    <div class="welcome-icon">😊</div>
+                    <h2>hola soy tu asistente virtual</h2>
+                    <p>puedeo ayudarte</p>
+                    <p class="welcome.tip"><strong>consejo</strong>se esecifico en tus preguntas para obtener mejores resltados
+                    </p>
+                </div>
+            </div>
+        }
+
+        @if(cargandoHistorial){
+            <div class="loading-history">
+                <div class="loading-spinner"></div>
+                <p>cargando tu historial de conversaciones</p>
+            </div>
+        }
+        <!--lista de mensajes dependiendo el tipo (usuario o asistente)-->
+        
+        <div class="messages-list">
+                @for(mensaje of mensajes; track trackByMensaje($index, mensaje) ){
+                    <div
+                    class="message-wrapper"
+                    [class.user-message]="mensaje.tipo == 'Usuario'"
+                    [class.asistente-message]="mensaje.tipo == 'Asistente'"
+                    >
+
+                    <!-- validar si el mensaje es del usuario-->
+                    @if(mensaje.tipo=== 'Usuario'){
+                        <div class="message user-msg">
+                                <div class="message-content">
+                                    <p>{{mensaje.contenido}}</p>
+                                </div>
+                                <div class="message-time">
+                                    <p>{{formatearHora(mensaje.fechaEnvio)}}</p>
+                                </div>
+                        </div>
+
+                    } 
+                    
+
+                    <!-- validar si el mensaje es del asistente-->
+                         @if(mensaje.tipo === 'Asistente'){
+                            <div class="message assistant-msg">
+                                <div class="message assistant-msg">
+                                    <div class="message-avatar">
+                                        🤖
+                                    </div>
+                                    <div class="message-bubble">
+                                        <div class="message-content">
+                                            <p [innerHTML]="formatearMensajeAsistente(mensaje.contenido)"></p>
+                                        </div>
+                                        <div class="message-time">
+                                           {{formatearHora(mensaje.fechaEnvio)}}
+                                            @if(mensaje.estado === 'Error'){
+                                                <span class="error-indicator">⚠️</span>
+                                            }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         }
+                </div>
+                }
+                <!-- Si el asistente esta Escribiendo -->
+                @if(asistenteEscribiendo){
+                    <div class="message-wrapper assistant-message">
+                        <div class="message assistant-msg typing">
+                            <div class="message-avatar">
+                                🤖
+                            </div>
+                            <div class="message-bubble">
+                                <div class="typing-indicator">
+                                    <div class="typing-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <p class="typing-text ">El asistente está escribiendo...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+        </div>
+    </main>
+
+    <footer class="chat-input">
+        <form 
+        class=" input-form"
+        (ngSubmit)="enviarMensaje()"
+        #chatForm="ngForm">
+    <div class="input-wrapper">
+        <textarea 
+        class="message-input" 
+        name="mensaje"
+        #mensajeInput
+        [(ngModel)]="mensajeTexto"
+        placeholder="Escribe tu mensaje aqui, (presiona Enter para enviar o Shitt + Enter para salto de linea)"
+        (keydown)="manejarTeclaPresionada($event)"
+        [disabled]="enviandoMensaje || asistenteEscribiendo"
+        rows="1"
+        ></textarea>
+    </div>
+    <button 
+    type="submit"
+    class="send-btn"
+    [disabled]="!mensajeTexto.trim() || enviandoMensaje || asistenteEscribiendo"
+    [class.sending]="enviandoMensaje"
+    >
+        @if(enviandoMensaje){
+            <span></span>  
+         }
+            @if(!enviandoMensaje){
+                <span class="sending-spinner"></span>
+            }
+
+    </button>
+    
+    
+        </form>
+
+    </footer>
+
+
+</div>
