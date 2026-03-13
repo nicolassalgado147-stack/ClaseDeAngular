@@ -20,6 +20,6 @@ provideHttpClient(),
 provideFirebaseApp(() => initializeApp (environment.firebaseConfig)),
 provideAuth(()  => getAuth()),
 provideFirestore(() => getFirestore()),
- 
+
 ]
 };
